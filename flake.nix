@@ -33,6 +33,10 @@
       };
     });
 
+    hydraJobs = {
+      inherit (self) packages;
+    };
+
     formatter = forAllSystems (pkgs: pkgs.nixfmt-rfc-style);
   };
 }
